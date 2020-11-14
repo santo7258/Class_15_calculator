@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/design.css">
+
+</head>
+<body>
+    <div class="header">
+
+    </div>
+    <div class="main">
+        <div class="calculator">
+            <form action="#" name="cal">
+                <input type="text" name="screen" id="screen"><br>
+                <br>
+    
+                <input type="button" value="c" onclick="cal.screen.value =''">
+                <input type="button" value="()" onclick="cal.screen.value +='()'">
+                <input type="button" value="%" onclick="cal.screen.value +='%'">
+                <input type="button" value="/" onclick="cal.screen.value +='/'">
+                <br>
+                <br>
+                <input type="button" value="7" onclick="cal.screen.value +='7'">
+                <input type="button" value="8" onclick="cal.screen.value +='8'">
+                <input type="button" value="9" onclick="cal.screen.value +='9'">
+                <input type="button" value="*" onclick="cal.screen.value +='*'">
+                <br>
+                <br>
+                <input type="button" value="4" onclick="cal.screen.value +='4'">
+                <input type="button" value="5" onclick="cal.screen.value +='5'">
+                <input type="button" value="6" onclick="cal.screen.value +='6'">
+                <input type="button" value="-" onclick="cal.screen.value +='-'">
+                <br>
+                <br>
+                <input type="button" value="1" onclick="cal.screen.value +='1'">
+                <input type="button" value="2" onclick="cal.screen.value +='2'">
+                <input type="button" value="3" onclick="cal.screen.value +='3'">
+                <input type="button" value="+" onclick="cal.screen.value +='+'">
+                <br>
+                <br>
+                <input type="button" value="&#8592" onclick="cal.screen.value = cal.screen.value.slice(0,-1)">
+                <input type="button" value="0" onclick="cal.screen.value +='0'">
+                <input type="button" value="." onclick="cal.screen.value +='.'">
+                <input type="button" value="=" onclick="cal.screen.value =eval(cal.screen.value)">
+           </form>
+        </div>
+    </div>
+    <script>
+        let form = document.querySelector('form');
+        form.addEventListener('submit',function(e){
+            e.preventDefault();
+            cal.screen.value =eval(cal.screen.value)
+        })
+    </script>
+</body>
+</html>

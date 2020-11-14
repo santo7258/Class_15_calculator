@@ -1,0 +1,66 @@
+body{
+    background-image: url(..//pic/bg.jpg);
+}
+.header{
+    height: 100px;
+    width: 100%;
+}
+.main .calculator{
+    height: 400px;
+    width: 300px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(77, 74, 74);
+    text-align: center;
+}
+input[type='button']{
+    width: 50px;
+    height: 40px;
+    border: 2px solid #abcdcf;
+    background-color: rgb(39, 32, 32);
+    color: white;
+    font-size: 20px;
+    margin-left: 2px;
+    box-shadow: 0 4px 8 px 0 #000000, 0 6px 20px 0 #1f4555;
+    text-shadow:1px 1px 10px black, 0 0 50px blue, 0 0 50px darkblue;
+    
+
+}
+input[type='button']:hover{
+    background-color: rgb(194, 190, 190);
+    color: black;
+    border-radius: 25%;
+    text-shadow: 1px 1px 10px rgb(72, 70, 180), 0 0 50px rgb(0, 0, 255), 0 0 50px rgb(2, 2, 53);
+    border-color: rgb(59, 94, 209);
+}
+
+input[type='text']{
+    background-color: rgb(255, 255, 255);
+    width: 73%;
+    height: 50px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px 0 #193541;
+    padding: 5px;
+    text-align: end;
+    font-size: 30px;
+}
+.main {
+    height: 400px;
+    width: 300px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-direction: reverse; 
+    margin: 0 auto; 
+  }
+  .calculator:hover{
+    box-shadow:0 6px 10px 0 rgb(0, 0, 0), 0 8px 30px 0 rgb(77, 74, 74);
+  }
+  
+  @keyframes example {
+    0%   {background-color:rgb(54, 101, 145); left:0px; top:0px;}
+    25%  {background-color:rgb(219, 219, 72); left:200px; top:0px;}
+    50%  {background-color:rgb(71, 71, 156); left:200px; top:200px;}
+    75%  {background-color:rgb(65, 158, 65); left:0px; top:200px;}
+    100% {background-color:rgb(187, 42, 42); left:0px; top:0px;}
+  }
